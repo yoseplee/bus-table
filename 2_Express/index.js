@@ -1,4 +1,5 @@
 //dependencies
+const fs = require('fs')
 const request = require('request'); //function
 const express = require('express')
 const app = express()
@@ -6,7 +7,7 @@ app.use(express.urlencoded())
 app.use(express.json())
 
 //key.json에서 가져와야함.
-const key = ''
+const key = JSON.parse(fs.readFileSync('./key.json')).api
 
 const url = 'http://openapi.tago.go.kr/openapi/service/BusLcInfoInqireService/getCtyCodeList';
 const queryParams = '?' + encodeURIComponent('ServiceKey') + '='+key; /* Service Key*/

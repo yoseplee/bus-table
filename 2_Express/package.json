@@ -1,0 +1,28 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "rest api for getting bus table",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoseplee/busTable.git"
+  },
+  "keywords": [
+    "bus",
+    "table",
+    "openapi",
+    "forecasting"
+  ],
+  "author": "yoseplee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoseplee/busTable/issues"
+  },
+  "homepage": "https://github.com/yoseplee/busTable#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
